@@ -16,7 +16,6 @@
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'b eh': darkMode === true}"
   >
-    <!-- ===== Header Start ===== -->
     <header
   class="g s r vd ya cj"
   :class="{ 'hh sm _k dj bl ll' : stickyMenu }"
@@ -29,7 +28,6 @@
         <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
       </a>
 
-      <!-- Hamburger Toggle BTN -->
       <button class="po rc" @click="navigationOpen = !navigationOpen">
         <span class="rc i pf re pd">
           <span class="du-block h q vd yc">
@@ -43,8 +41,7 @@
           </span>
         </span>
       </button>
-      <!-- Hamburger Toggle BTN -->
-    </div>
+      </div>
 
     <div
       class="vd wo/4 sd qo f ho oo wf yf"
@@ -70,7 +67,6 @@
               </svg>
             </a>
 
-            <!-- Dropdown Start -->
             <ul class="a" :class="{ 'tc': dropdown }">
               <li><a href="blog-grid.html" class="xl" :class="{ 'mk': page === 'blog-grid' }">Blog Grid</a></li>
               <li><a href="blog-single.html" class="xl" :class="{ 'mk': page === 'blog-single' }">Blog Single</a></li>
@@ -78,8 +74,7 @@
               <li><a href="signup.html" class="xl" :class="{ 'mk': page === 'signup' }">Sign Up</a></li>
               <li><a href="404.html" class="xl" :class="{ 'mk': page === '404' }">404</a></li>
             </ul>
-            <!-- Dropdown End -->
-          </li>
+            </li>
           <li><a href="index.html#support" class="xl">Support</a></li>
         </ul>
       </nav>
@@ -88,11 +83,9 @@
         <div class="pc h io pa ra" :class="navigationOpen ? '!-ud-visible' : 'd'">
           <label class="rc ab i">
             <input type="checkbox" :value="darkMode" @change="darkMode = !darkMode" class="pf vd yc uk h r za ab" />
-            <!-- Icon Sun -->
             <svg :class="{ 'wn' : page === 'home', 'xh' : page === 'home' && stickyMenu }" class="th om" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.0908 18.6363C10.3549 18.6363 8.69 17.9467 7.46249 16.7192C6.23497 15.4916 5.54537 13.8268 5.54537 12.0908C5.54537 10.3549 6.23497 8.69 7.46249 7.46249C8.69 6.23497 10.3549 5.54537 12.0908 5.54537C13.8268 5.54537 15.4916 6.23497 16.7192 7.46249C17.9467 8.69 18.6363 10.3549 18.6363 12.0908C18.6363 13.8268 17.9467 15.4916 16.7192 16.7192C15.4916 17.9467 13.8268 18.6363 12.0908 18.6363ZM12.0908 16.4545C13.2481 16.4545 14.358 15.9947 15.1764 15.1764C15.9947 14.358 16.4545 13.2481 16.4545 12.0908C16.4545 10.9335 15.9947 9.8236 15.1764 9.00526C14.358 8.18692 13.2481 7.72718 12.0908 7.72718C10.9335 7.72718 9.8236 8.18692 9.00526 9.00526C8.18692 9.8236 7.72718 10.9335 7.72718 12.0908C7.72718 13.2481 8.18692 14.358 9.00526 15.1764C9.8236 15.9947 10.9335 16.4545 12.0908 16.4545ZM10.9999 0.0908203H13.1817V3.36355H10.9999V0.0908203ZM10.9999 20.8181H13.1817V24.0908H10.9999V20.8181ZM2.83446 4.377L4.377 2.83446L6.69082 5.14828L5.14828 6.69082L2.83446 4.37809V4.377ZM17.4908 19.0334L19.0334 17.4908L21.3472 19.8046L19.8046 21.3472L17.4908 19.0334ZM19.8046 2.83337L21.3472 4.377L19.0334 6.69082L17.4908 5.14828L19.8046 2.83446V2.83337ZM5.14828 17.4908L6.69082 19.0334L4.377 21.3472L2.83446 19.8046L5.14828 17.4908ZM24.0908 10.9999V13.1817H20.8181V10.9999H24.0908ZM3.36355 10.9999V13.1817H0.0908203V10.9999H3.36355Z" fill=""/>
             </svg>
-            <!-- Icon Sun -->
             <img class="xc nm" src="images/icon-moon.svg" alt="Moon" />
           </label>
         </div>
@@ -104,12 +97,8 @@
   </div>
 </header>
 
-    <!-- ===== Header End ===== -->
-
     <main>
-      <!-- ===== Hero Start ===== -->
       <section class="gj do ir hj sp jr i pg">
-        <!-- Hero Images -->
         <div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
           <img src="images/shape-01.svg" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua" />
           <img src="images/shape-02.svg" alt="shape" class="xc 2xl:ud-block h u p va" />
@@ -118,7 +107,6 @@
           <img src="images/hero.png" alt="Quran" class="h q r ua" />
         </div>
 
-        <!-- Hero Content -->
         <div class="bb ze ki xn 2xl:ud-px-0">
           <div class="tc _o">
             <div class="animate_left jn/2">
@@ -141,54 +129,44 @@
           </div>
         </div>
       </section>
-      <!-- ===== Hero End ===== -->
-
-      <!-- ===== Small Features Start ===== -->
       <section id="features">
         <div class="bb ze ki yn 2xl:ud-px-12.5">
           <div class="tc uf zo xf ap zf bp mq">
-            <!-- Small Features Item -->
             <div class="animate_top kn to/3 tc cg oq">
               <div class="tc wf xf cf ae cd rg mh">
                 <img src="images/icon-01.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">24/7 Support</h4>
-                <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h4 class="ek yj go kk wm xb">Decentralization</h4>
+                <p>Ensures global accessibility to Quranic resources, preserving data integrity and resisting censorship.</p>
               </div>
             </div>
 
-            <!-- Small Features Item -->
             <div class="animate_top kn to/3 tc cg oq">
               <div class="tc wf xf cf ae cd rg nh">
                 <img src="images/icon-02.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">Take Ownership</h4>
-                <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h4 class="ek yj go kk wm xb">Transparency</h4>
+                <p>Immutable records on the blockchain verify the provenance and authenticity of Quranic resources.</p>
               </div>
             </div>
 
-            <!-- Small Features Item -->
             <div class="animate_top kn to/3 tc cg oq">
               <div class="tc wf xf cf ae cd rg oh">
                 <img src="images/icon-03.svg" alt="Icon" />
               </div>
               <div>
-                <h4 class="ek yj go kk wm xb">Team Work</h4>
-                <p>Lorem ipsum dolor sit amet conse adipiscing elit.</p>
+                <h4 class="ek yj go kk wm xb">Global Accessibility</h4>
+                <p>Transcends geographical boundaries and language barriers to promote deeper understanding worldwide.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Small Features End ===== -->
-
-      <!-- ===== About Start ===== -->
       <section class="ji gp uq 2xl:ud-py-35 pg">
         <div class="bb ze ki xn wq">
           <div class="tc wf gg qq">
-            <!-- About Images -->
             <div class="animate_left xc gn gg jn/2 i">
               <div>
                 <img src="images/shape-05.svg" alt="Shape" class="h -ud-left-5 x" />
@@ -202,37 +180,31 @@
               </div>
             </div>
 
-            <!-- About Content -->
             <div class="animate_right jn/2">
-              <h4 class="ek yj mk gb">Why Choose Us</h4>
-              <h2 class="fk vj zp pr kk wm qb">We Make Our customers happy by giving Best services.</h2>
-              <p class="uo">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+              <h4 class="ek yj mk gb">The Role of Web3 Technology</h4>
+              <h2 class="fk vj zp pr kk wm qb">Ushering in a new era of decentralized Quranic studies.</h2>
+              <p class="uo">Web3 technology offers a solution to modern challenges by creating a decentralized, transparent, and collaborative system. Our goal is to leverage the power of blockchain and smart contracts to provide a platform that empowers users worldwide.</p>
 
               <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
                   <img src="images/icon-play.svg" alt="Play" />
                 </span>
-                <span class="kk">SEE HOW WE WORK</span>
+                <span class="kk">EXPLORE THE PLATFORM</span>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== About End ===== -->
-
-      <!-- ===== Team Start ===== -->
       <section class="i pg ji gp uq">
-        <!-- Bg Shapes -->
         <span class="rc h s r vd fd/5 fh rm"></span>
         <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
         <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
         <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
         <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
 
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+          x-data="{ sectionTitle: `Empowering Collaborative Knowledge Sharing`, sectionTitleText: `Fostering an environment where individuals come together to explore, understand, and share the wisdom of the Quran.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -245,11 +217,8 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ze i va ki xn xq jb jo">
           <div class="wc qf pn xo gg cp">
-            <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
                 <img class="vd" src="images/team-01.png" alt="Team" />
@@ -286,10 +255,9 @@
               </div>
 
               <h4 class="yj go kk wm ob zb">Olivia Andrium</h4>
-              <p>Product Manager</p>
+              <p>Web3 Integrator</p>
             </div>
 
-            <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
                 <img class="vd" src="images/team-02.png" alt="Team" />
@@ -326,10 +294,9 @@
               </div>
 
               <h4 class="yj go kk wm ob zb">Jemse Kemorun</h4>
-              <p>Product Designer</p>
+              <p>Blockchain Developer</p>
             </div>
 
-            <!-- Team Item -->
             <div class="animate_top rj">
               <div class="c i pg z-1">
                 <img class="vd" src="images/team-03.png" alt="Team" />
@@ -366,18 +333,14 @@
               </div>
 
               <h4 class="yj go kk wm ob zb">Avi Pestarica</h4>
-              <p>Web Designer</p>
+              <p>Decentralized Architect</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Team End ===== -->
-
-      <!-- ===== Services Start ===== -->
       <section class="lj tp kr">
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+          x-data="{ sectionTitle: `Advantages of Web3 Integration`, sectionTitleText: `By integrating Web3 technology, we introduce several transformative advantages to the realm of Quranic study.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -390,68 +353,55 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ze ki xn yq mb en">
           <div class="wc qf pn xo ng">
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Polygon Blockchain</h4>
+              <p>Leveraging the Polygon blockchain, known for its security and robust smart contract capabilities.</p>
             </div>
 
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Smart Contracts</h4>
+              <p>Self-executing contracts automate processes ensuring fair rewards and efficient interactions.</p>
             </div>
 
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Data Encryption</h4>
+              <p>State-of-the-art encryption protects user data and interactions from unauthorized access.</p>
             </div>
 
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Speed Optimized</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Decentralized Storage</h4>
+              <p>Minimizes risk of loss by ensuring materials are not stored in a single centralized location.</p>
             </div>
 
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Fully Customizable</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Immutable Records</h4>
+              <p>Blockchain provides an immutable and tamper-proof record of Quranic resources.</p>
             </div>
 
-            <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Regular Updates</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
+              <h4 class="ek zj kk wm nb _b">Long-Term Preservation</h4>
+              <p>Data durability and version control ensure Quranic resources are available for future generations.</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Services End ===== -->
-
-      <!-- ===== Pricing Table Start ===== -->
       <section x-data="setup()" class="i pg fh rm ji gp uq">
-        <!-- Bg Shapes -->
         <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
         <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
         <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
         <img src="images/shape-12.svg" alt="Shape" class="h p s" />
         <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Supported Web3 Wallets`, sectionTitleText: `Connect seamlessly to the Quran Web3 platform using our recommended secure blockchain wallets.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -464,11 +414,8 @@
 
 
         </div>
-        <!-- Section Title End -->
-
-        <!-- Pricing switcher -->
         <div class="tc wf xf jb og">
-          <span class="ek kk wm">Bill Monthly</span>
+          <span class="ek kk wm">EVM Wallets</span>
           <button class="i rg gm" x-cloak @click="billPlan == 'monthly' ? billPlan = 'annually' : billPlan = 'monthly'">
             <div class="fe id bl gh rg xk outline-none"></div>
             <div
@@ -476,14 +423,12 @@
               :class="{ 'ff': billPlan == 'monthly', 'gf': billPlan == 'annually' }"
             ></div>
           </button>
-          <span class="ek kk wm">Bill Annually</span>
+          <span class="ek kk wm">Mobile Wallets</span>
         </div>
 
-        <!-- Pricing Table -->
         <div class="bb ze i va ki xn yq bc">
           <div class="wc qf pn xo jg">
             <template x-for="(plan, i) in plans" x-key="i">
-              <!-- Pricing Item -->
               <div class="animate_top rj sg hh sm vk xm hi nj oj">
                 <h4 x-text="plan.name" class="wj kk wm fb"></h4>
 
@@ -496,37 +441,31 @@
                   <span x-text="billPlan == 'monthly' ? '/per month' : '/per year'" class="sc ak kk wm"></span>
                 </div>
 
-                <p class="ur dc">No credit card required</p>
+                <p class="ur dc">No connection fee required</p>
 
-                <!-- Button -->
                 <a
                   href="#"
                   class="ek rg lk ml il gi ri"
-                  :class="plan.name == 'Growth Plan' ? 'gh sl' : 'mh tl'"
+                  :class="plan.name == 'Trust Wallet' ? 'gh sl' : 'mh tl'"
                 >
-                  Try for free
+                  Connect Wallet
                 </a>
 
-                <!-- Features -->
                 <ul class="tc sf bg ob fb">
                   <template x-for="(feature, i) in plan.features" x-key="i">
                     <li x-text="feature"></li>
                   </template>
                 </ul>
 
-                <p class="kk wm">7-day free trial</p>
+                <p class="kk wm">Instant Web3 Access</p>
               </div>
             </template>
           </div>
         </div>
       </section>
-      <!-- ===== Pricing Table End ===== -->
-
-      <!-- ===== Projects Start ===== -->
       <section class="pg pj vp mr oj wp nr">
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Quranic Art & NFTs`, sectionTitleText: `Showcasing the artistic beauty of the Quran through distinct, limited-edition digital artworks inspired by Quranic calligraphy and themes.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -539,10 +478,7 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ze ki xn 2xl:ud-px-0 jb" x-data="{filterTab: 1}">
-          <!-- Porject Tab -->
           <div
             class="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc"
           >
@@ -552,7 +488,7 @@
               :class="{ 'gh lk' : filterTab === 1 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              All
+              All Artworks
             </button>
             <button
               data-filter=".branding"
@@ -560,7 +496,7 @@
               :class="{ 'gh lk' : filterTab === 2 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Branding Strategy
+              Calligraphy
             </button>
             <button
               data-filter=".digital"
@@ -568,7 +504,7 @@
               :class="{ 'gh lk' : filterTab === 3 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Digital Experiences
+              Digital Collectibles
             </button>
             <button
               data-filter=".ecommerce"
@@ -576,14 +512,12 @@
               :class="{ 'gh lk' : filterTab === 4 }"
               class="project-tab-btn ek rg ml il vi mi"
             >
-              Ecommerce
+              Charitable Causes
             </button>
           </div>
 
-          <!-- Projects item wrapper -->
           <div class="projects-wrapper tc -ud-mx-5">
             <div class="project-sizer"></div>
-            <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
                 <img src="images/project-01.png" alt="Project" />
@@ -591,8 +525,8 @@
                 <div 
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Quranic Calligraphy</h4>
+                  <p>Limited Edition NFT</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="#"
@@ -605,7 +539,6 @@
               </div>
             </div>
 
-            <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 digital">
               <div class="c i pg sg z-1">
                 <img src="images/project-02.png" alt="Project" />
@@ -613,8 +546,8 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Quranic Calligraphy</h4>
+                  <p>Limited Edition NFT</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="#"
@@ -627,7 +560,6 @@
               </div>
             </div>
 
-            <!-- Project Item -->
             <div class="project-item wi fb vd jn/2 to/3 branding ecommerce">
               <div class="c i pg sg z-1">
                 <img src="images/project-04.png" alt="Project" />
@@ -635,8 +567,8 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Quranic Calligraphy</h4>
+                  <p>Limited Edition NFT</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="#"
@@ -649,7 +581,6 @@
               </div>
             </div>
 
-            <!-- Project Item -->
             <div class="project-item wi fb vd vo/3 digital ecommerce">
               <div class="c i pg sg z-1">
                 <img src="images/project-03.png" alt="Project" />
@@ -657,8 +588,8 @@
                 <div
                   class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
                 >
-                  <h4 class="ek tj kk hc">Photo Retouching</h4>
-                  <p>Branded Ecommerce</p>
+                  <h4 class="ek tj kk hc">Quranic Calligraphy</h4>
+                  <p>Limited Edition NFT</p>
                   <a
                     class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
                     href="#"
@@ -673,13 +604,9 @@
           </div>
         </div>
       </section>
-      <!-- ===== Projects End ===== -->
-
-      <!-- ===== Testimonials Start ===== -->
       <section class="hj rp hr">
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Client’s Testimonials`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Community Feedback`, sectionTitleText: `Hear from scholars, researchers, and enthusiasts who have joined our dynamic ecosystem for knowledge-sharing.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -692,18 +619,12 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ze ki xn ar">
           <div class="animate_top jb cq">
-            <!-- Slider main container -->
             <div class="swiper testimonial-01">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="i hh rm sg vk xm bi qj">
-                    <!-- Border Shape -->
                     <span class="rc je md/2 gh xg h q r"></span>
                     <span class="rc je md/2 mh yg h q p"></span>
 
@@ -713,13 +634,13 @@
                       <div>
                         <img src="images/icon-quote.svg" alt="Quote" />
                         <p class="ek ik xj _p kc fb">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.
+                          The Quran Web3 Project provides an unprecedented level of transparency and data integrity. It's truly a leap forward for decentralized Quranic studies.
                         </p>
 
                         <div class="tc yf vf">
                           <div>
-                            <span class="rc ek xj kk wm zb">Devid Smith</span>
-                            <span class="rc">Founter @democompany</span>
+                            <span class="rc ek xj kk wm zb">Dr. Tariq Rahman</span>
+                            <span class="rc">Quranic Scholar</span>
                           </div>
 
                           <img class="rk" src="images/brand-light-02.svg" alt="Brand" />
@@ -729,7 +650,6 @@
                   </div>
                 </div>
               </div>
-              <!-- If we need navigation -->
               <div class="tc wf xf fg jb">
                 <div
                   class="swiper-button-prev c tc wf xf ie ld rg _g dh pf ml vr hh rm tl zm rl ym"
@@ -753,9 +673,6 @@
           </div>
         </div>
       </section>
-      <!-- ===== Testimonials End ===== -->
-
-      <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
         <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
@@ -766,30 +683,26 @@
           <div class="tc uf sn tn xf un gg">
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">785</h2>
-              <p class="ek bk aq">Global Brands</p>
+              <p class="ek bk aq">Decentralized Nodes</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">533</h2>
-              <p class="ek bk aq">Happy Clients</p>
+              <p class="ek bk aq">Active Scholars</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">865</h2>
-              <p class="ek bk aq">Winning Award</p>
+              <p class="ek bk aq">Verified NFTs</p>
             </div>
             <div class="animate_top me/5 ln rj">
               <h2 class="gk vj zp or kk wm hc">346</h2>
-              <p class="ek bk aq">Happy Clients</p>
+              <p class="ek bk aq">Global Contributors</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== Counter End ===== -->
-
-      <!-- ===== Clients Start ===== -->
       <section class="pj vp mr">
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Supported Web3 Networks`, sectionTitleText: `Built on robust and secure blockchain infrastructure to ensure censorship resistance and provenance.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -802,8 +715,6 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ze ah ch pm hj xp ki xn 2xl:ud-px-49 bc">
           <div class="wc rf qn zf cp kq xf wf">
             <a href="#" class="rc animate_top">
@@ -833,11 +744,7 @@
           </div>
         </div>
       </section>
-      <!-- ===== Clients End ===== -->
-
-      <!-- ===== Blog Start ===== -->
       <section class="ji gp uq">
-        <!-- Section Title Start -->
         <div
           x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
         >
@@ -852,11 +759,8 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="bb ye ki xn vq jb jo">
           <div class="wc qf pn xo zf iq">
-            <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
                 <img class="w-full" src="images/blog-01.png" alt="Blog" />
@@ -887,7 +791,6 @@
               </div>
             </div>
 
-            <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
                 <img class="w-full" src="images/blog-02.png" alt="Blog" />
@@ -918,7 +821,6 @@
               </div>
             </div>
 
-            <!-- Blog Item -->
             <div class="animate_top sg vk rm xm">
               <div class="c rc i z-1 pg">
                 <img class="w-full" src="images/blog-03.png" alt="Blog" />
@@ -951,20 +853,15 @@
           </div>
         </div>
       </section>
-      <!-- ===== Blog End ===== -->
-
-      <!-- ===== Contact Start ===== -->
       <section id="support" class="i pg fh rm ji gp uq">
-        <!-- Bg Shapes -->
         <img src="images/shape-06.svg" alt="Shape" class="h aa y" />
         <img src="images/shape-03.svg" alt="Shape" class="h ca u" />
         <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
         <img src="images/shape-12.svg" alt="Shape" class="h p s" />
         <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
-        <!-- Section Title Start -->
         <div
-          x-data="{ sectionTitle: `Let’s Stay Connected`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
+          x-data="{ sectionTitle: `Join the Community`, sectionTitleText: `Engage in meaningful discussions and share insights with a diverse online community dedicated to exploring the Quran.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
@@ -977,30 +874,27 @@
 
 
         </div>
-        <!-- Section Title End -->
-
         <div class="i va bb ye ki xn wq jb mo">
           <div class="tc uf sn tf rn un zf xl:gap-10">
             <div class="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
-              <!-- Bg Shapes -->
               <img src="images/shape-03.svg" alt="Shape" class="h la x wd" />
               <img src="images/shape-06.svg" alt="Shape" class="h la ma ne kf" />
 
               <div class="fb">
                 <h4 class="wj kk wm cc">Email Address</h4>
-                <p><a href="#">support@startup.com</a></p>
+                <p><a href="#">contact@quran-web3.nft</a></p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Office Location</h4>
-                <p>76/A, Green valle, Califonia USA.</p>
+                <h4 class="wj kk wm cc">Decentralized Network</h4>
+                <p>Polygon Blockchain Ecosystem.</p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Phone Number</h4>
-                <p><a href="#">+009 8754 3433 223</a></p>
+                <h4 class="wj kk wm cc">Public Forum</h4>
+                <p><a href="#">discord.gg/quranweb3</a></p>
               </div>
               <div class="fb">
-                <h4 class="wj kk wm cc">Skype Email</h4>
-                <p><a href="#">example@yourmail.com</a></p>
+                <h4 class="wj kk wm cc">Support Channel</h4>
+                <p><a href="#">support@quran-web3.nft</a></p>
               </div>
 
               <span class="rc nd rh tm lc fb"></span>
@@ -1061,7 +955,7 @@
                       type="text"
                       name="fullname"
                       id="fullname"
-                      placeholder="Devid Wonder"
+                      placeholder="Your Name"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
@@ -1072,7 +966,7 @@
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="example@gmail.com"
+                      placeholder="wallet@domain.com"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
@@ -1080,12 +974,12 @@
 
                 <div class="tc sf yo ap zf ep qb">
                   <div class="vd to/2">
-                    <label class="rc ac" for="phone">Phone number</label>
+                    <label class="rc ac" for="phone">Wallet Address</label>
                     <input
                       type="text"
                       name="phone"
                       id="phone"
-                      placeholder="+009 3342 3432"
+                      placeholder="0x..."
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
@@ -1096,7 +990,7 @@
                       type="text"
                       for="subject"
                       id="subject"
-                      placeholder="Type your subject"
+                      placeholder="How can we help?"
                       class="vd ph sg zk xm _g ch pm hm dm dn em pl/50 xi mi"
                     />
                   </div>
@@ -1121,38 +1015,31 @@
           </div>
         </div>
       </section>
-      <!-- ===== Contact End ===== -->
-
-      <!-- ===== CTA Start ===== -->
       <section class="i pg gh ji">
-  <!-- Bg Shape -->
   <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
 
   <div class="bb ye i z-10 ki xn dr">
     <div class="tc uf sn tn un gg">
       <div class="animate_left to/2">
         <h2 class="fk vj zp pr lk ac">
-            Join with 5000+ Startups Growing with Base.
+            Join the Quran Web3 Ecosystem.
         </h2>
         <p class="lk">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.
+            Be part of a collaborative platform that bridges the gap between traditional wisdom and the digital age. Experience global accessibility and data security today.
         </p>
       </div>
       <div class="animate_right bf">
         <a href="#" class="vc ek kk hh rg ol il cm gi hi">
-            Get Started Now
+            Explore the Platform
         </a>
       </div>
     </div>
   </div>
 </section>
 
-      <!-- ===== CTA End ===== -->
-    </main>
-    <!-- ===== Footer Start ===== -->
+      </main>
     <footer>
   <div class="bb ze ki xn 2xl:ud-px-0">
-    <!-- Footer Top -->
     <div class="ji gp">
       <div class="tc uf ap gg fp">
         <div class="animate_top zd/2 to/4">
@@ -1161,7 +1048,7 @@
             <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
           </a>
 
-          <p class="lc fb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="lc fb">Revolutionizing Quranic studies through Web3, ensuring decentralization, transparency, and collaborative knowledge-sharing.</p>
 
           <ul class="tc wf cg">
             <li>
@@ -1233,46 +1120,46 @@
 
         <div class="vd ro tc sf rn un gg vn">
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Quick Links</h4>
+            <h4 class="kk wm tj ec">Platform</h4>
 
             <ul>
               <li><a href="#" class="sc xl vb">Home</a></li>
-              <li><a href="#" class="sc xl vb">Product</a></li>
+              <li><a href="#" class="sc xl vb">NFT Collections</a></li>
               <li>
                 <a href="#" class="sc xl vb">
-                  Careers 
+                  Smart Contracts 
                   <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
                 </a>
               </li>
-              <li><a href="#" class="sc xl vb">Pricing</a></li>
+              <li><a href="#" class="sc xl vb">Wallets</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Services</h4>
+            <h4 class="kk wm tj ec">Resources</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Web Development</a></li>
-              <li><a href="#" class="sc xl vb">Graphics Design</a></li>
-              <li><a href="#" class="sc xl vb">Digital Marketing</a></li>
-              <li><a href="#" class="sc xl vb">Ui/Ux Design</a></li>
+              <li><a href="#" class="sc xl vb">Blockchain Verification</a></li>
+              <li><a href="#" class="sc xl vb">Decentralized Storage</a></li>
+              <li><a href="#" class="sc xl vb">Data Encryption</a></li>
+              <li><a href="#" class="sc xl vb">Community Forums</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
-            <h4 class="kk wm tj ec">Support</h4>
+            <h4 class="kk wm tj ec">Community</h4>
 
             <ul>
-              <li><a href="#" class="sc xl vb">Company</a></li>
-              <li><a href="#" class="sc xl vb">Press media</a></li>
+              <li><a href="#" class="sc xl vb">About Us</a></li>
+              <li><a href="#" class="sc xl vb">Whitepaper</a></li>
               <li><a href="#" class="sc xl vb">Our Blog</a></li>
-              <li><a href="#" class="sc xl vb">Contact Us</a></li>
+              <li><a href="#" class="sc xl vb">Support</a></li>
             </ul>
           </div>
 
           <div class="animate_top">
             <h4 class="kk wm tj ec">Newsletter</h4>
-            <p class="ac qe">Subscribe to receive future updates</p>
+            <p class="ac qe">Subscribe to receive updates on new NFT drops and features.</p>
 
             <form action="https://formbold.com/s/unique_form_id" method="POST">
               <div class="i">
@@ -1303,9 +1190,6 @@
         </div>
       </div>
     </div>
-    <!-- Footer Top -->
-
-    <!-- Footer Bottom -->
     <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
       <div class="animate_top">
         <ul class="tc wf gg">
@@ -1316,16 +1200,12 @@
       </div>
 
       <div class="animate_top">
-        <p>&copy; 2025 Base. All rights reserved</p>
+        <p>&copy; 2026 Quran Web3. All rights reserved</p>
       </div>
     </div>
-    <!-- Footer Bottom -->
-  </div>
+    </div>
 </footer>
 
-    <!-- ===== Footer End ===== -->
-
-    <!-- ====== Back To Top Start ===== -->
     <button
   class="xc wf xf ie ld vg sr gh tr g sa ta _a"
   @click="window.scrollTo({top: 0, behavior: 'smooth'})"
@@ -1337,8 +1217,6 @@
   </svg>
 </button>
 
-    <!-- ====== Back To Top End ===== -->
-
     <script>
       //  Pricing Table
       const setup = () => {
@@ -1349,28 +1227,28 @@
 
           plans: [
             {
-              name: 'Starter',
+              name: 'MetaMask',
               price: {
-                monthly: 29,
-                annually: 29 * 12 - 199,
+                monthly: 0,
+                annually: 0 * 12 - 0,
               },
-              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+              features: ['EVM Compatible', 'Secure Connection', 'Polygon Network Ready'],
             },
             {
-              name: 'Growth Plan',
+              name: 'Trust Wallet',
               price: {
-                monthly: 59,
-                annually: 59 * 12 - 100,
+                monthly: 0,
+                annually: 0 * 12 - 0,
               },
-              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+              features: ['Mobile Accessibility', 'Multi-Chain Support', 'Decentralized Storage'],
             },
             {
-              name: 'Business',
+              name: 'Brave Wallet',
               price: {
-                monthly: 139,
-                annually: 139 * 12 - 100,
+                monthly: 0,
+                annually: 0 * 12 - 0,
               },
-              features: ['400 GB Storaget', 'Unlimited Photos & Videos', 'Exclusive Support'],
+              features: ['Browser Integrated', 'No Extension Needed', 'Privacy Focused'],
             },
           ],
         };
